@@ -1,0 +1,12 @@
+const app = require("../src/app");
+const connectDb = require("../src/config/db");
+
+module.exports = async (req, res) => {
+  try {
+    await connectDb();
+    return app(req, res);
+  } catch (error) {
+    console.error("DB connection failed:", error);
+    return res.status(500).json({ message: "Database connection failed" });
+  }
+};

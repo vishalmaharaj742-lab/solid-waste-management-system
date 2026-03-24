@@ -15,8 +15,11 @@ const {
 
 const router = express.Router();
 
-const uploadDir = process.env.UPLOAD_DIR || "uploads";
-const absoluteUploadDir = path.join(process.cwd(), uploadDir);
+const isVercel = process.env.VERCEL === "1";
+const uploadDir = process.env.UPLOAD_DIR || (isVercel ? "/tmp/uploads" : "uploads");
+const absoluteUploadDir = path.isAbsolute(uploadDir)
+  ? uploadDir
+  : path.join(process.cwd(), uploadDir);
 if (!fs.existsSync(absoluteUploadDir)) {
   fs.mkdirSync(absoluteUploadDir, { recursive: true });
 }
