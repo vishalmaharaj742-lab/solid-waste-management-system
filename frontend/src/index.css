@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-sand text-ink;
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur border border-white/70 shadow-soft;
+}
+
+.page-gradient {
+  background: radial-gradient(circle at top left, #ecfeff 0%, #f8fafc 45%, #fff7ed 100%);
+}
+
+.hero-surface {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(251, 113, 133, 0.1));
+}
+
+.image-card {
+  @apply rounded-[28px] overflow-hidden border border-white/60 shadow-glow;
+}
+
+.image-overlay {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.05) 0%, rgba(15, 23, 42, 0.75) 100%);
+}
+
+.ringed {
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.06), 0 20px 50px -30px rgba(15, 23, 42, 0.4);
+}

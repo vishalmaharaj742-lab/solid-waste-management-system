@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Sample User",
+    "email": "user@swms.local",
+    "password": "User123!",
+    "role": "user"
+  },
+  {
+    "name": "SWMS Admin",
+    "email": "admin@swms.local",
+    "password": "Admin123!",
+    "role": "admin"
+  }
+]

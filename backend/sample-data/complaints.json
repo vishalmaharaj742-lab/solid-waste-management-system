@@ -1,0 +1,14 @@
+[
+  {
+    "wasteType": "Plastic",
+    "location": { "latitude": 28.6139, "longitude": 77.209 },
+    "description": "Overflowing plastic waste near the market entrance.",
+    "status": "Pending"
+  },
+  {
+    "wasteType": "Wet",
+    "location": { "latitude": 19.076, "longitude": 72.8777 },
+    "description": "Food waste piled up behind the cafeteria.",
+    "status": "In Progress"
+  }
+]
